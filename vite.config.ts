@@ -7,6 +7,11 @@ export default defineConfig({
   plugins: [
     solidStart(),
     tailwindcss(),
-    nitro()
+    nitro({
+      prerender: {
+        crawlLinks: true,
+        failOnError: true,
+      },
+    })
   ]
 });
