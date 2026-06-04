@@ -1,5 +1,6 @@
 import {JSX, Suspense} from "solid-js";
 import Header from "~/components/global/Header";
+import Footer from "~/components/global/Footer";
 
 export default function Layout(props: { children: JSX.Element; }) {
     return (
@@ -12,6 +13,8 @@ export default function Layout(props: { children: JSX.Element; }) {
                     {props.children}
                 </main>
             </Suspense>
+
+            <Footer links={[]} />
         </div>
     )
 }
