@@ -6,7 +6,7 @@
     "build": "vite build",
     "start": "vite start",
     "preview": "vite preview",
-    "wrangler": "pnpm run build && npx wrangler dev"
+    "wrangler": "npx wrangler dev"
   },
   "dependencies": {
     "@solidjs/router": "^0.15.0",
