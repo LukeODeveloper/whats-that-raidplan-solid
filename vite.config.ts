@@ -12,6 +12,15 @@ export default defineConfig({
         crawlLinks: true,
         failOnError: true,
       },
+      compatibilityDate: "2024-09-19",
+      preset: "cloudflare_module",
+      cloudflare: {
+        deployConfig: true,
+        nodeCompat: true,
+        wrangler: {
+
+        }
+      }
     })
   ]
 });
